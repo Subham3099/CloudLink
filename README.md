@@ -26,7 +26,7 @@ This repository contains a CRUD (Create, Read, Update, Delete) application for m
 4. Run the following command to start the server: <br>
    ```bash 
    mvn spring-boot:run 
-   ``` <br>
+
 5. Access the application through a REST API testing tool or web browser. <br>
 
 ## API Endpoints <br>
