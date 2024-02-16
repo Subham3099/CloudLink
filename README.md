@@ -24,8 +24,8 @@ This repository contains a CRUD (Create, Read, Update, Delete) application for m
 2. Ensure you have Java and Maven installed. <br>
 3. Navigate to the project directory. <br>
 4. Run the following command to start the server: <br>
-   ```bash <br>
-   mvn spring-boot:run <br>
+   ```bash 
+   mvn spring-boot:run 
    ``` <br>
 5. Access the application through a REST API testing tool or web browser. <br>
 
