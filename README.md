@@ -1,4 +1,4 @@
-# Cloud Vendor Management API <br>
+# CloudLink: Empowering Seamless Cloud Vendor Interaction <br>
 
 This repository contains a CRUD (Create, Read, Update, Delete) application for managing cloud vendors using Spring Boot for the backend. <br>
 
