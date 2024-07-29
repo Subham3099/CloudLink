@@ -3,13 +3,16 @@ package com.rest_api_crud.crud.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 @Entity
 @Table(name="cloud_vendor_info")
 public class CloudVendor {
 
     @Id
-    private String vendorId; 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long vendorId; 
     private String vendorName;
     private String vendorAddress;
     private String vendorPhoneNumber;
@@ -19,7 +22,7 @@ public class CloudVendor {
     }
 
 
-    public CloudVendor(String vendorId, String vendorName, String vendorAddress, String vendorPhoneNumber) {
+    public CloudVendor(Long vendorId, String vendorName, String vendorAddress, String vendorPhoneNumber) {
         this.vendorId = vendorId;
         this.vendorName = vendorName;
         this.vendorAddress = vendorAddress;
@@ -27,12 +30,12 @@ public class CloudVendor {
     }
 
 
-    public String getVendorId() {
+    public Long getVendorId() {
         return vendorId;
     }
 
 
-    public void setVendorId(String vendorId) {
+    public void setVendorId(Long vendorId) {
         this.vendorId = vendorId;
     }
 
@@ -65,8 +68,4 @@ public class CloudVendor {
     public void setVendorPhoneNumber(String vendorPhoneNumber) {
         this.vendorPhoneNumber = vendorPhoneNumber;
     }
-
-    
-    
-
 }

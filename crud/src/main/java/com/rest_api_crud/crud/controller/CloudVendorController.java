@@ -29,7 +29,6 @@ public class CloudVendorController {
     public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorId) {
 
         return cloudVendorService.getCloudVendor(vendorId);
-        // new CloudVendor("C1", "Vendor 1", "Address 1", "Phone No");
     }
 
     // read all cloud vendor
@@ -37,7 +36,6 @@ public class CloudVendorController {
     public List<CloudVendor> getAllCloudVendorDetails() {
 
         return cloudVendorService.getAllCloudVendors();
-        // new CloudVendor("C1", "Vendor 1", "Address 1", "Phone No");
     }
 
     @PostMapping
